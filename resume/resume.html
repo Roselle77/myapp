@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>Resume</title>
+    <style>
+    * {
+        font-family: 'Playfair Display', serif;
+    }
+    body {
+        background-image: linear-gradient(to right, #EECDA3, #EF629F);
+    }
+        nav {
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    nav li {
+        list-style-type: none;
+    }
+    nav li a {
+        border: 1px solid #C71585;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 23px;
+        font-weight: 600;
+        color: #C71585;
+        letter-spacing: 0.03em;
+        transition: 0.2s ease-in;
+    }
+    nav li a:hover {
+        background-color: #C71585;
+        opacity: 0.8;
+        color: black;
+        box-shadow: 10px 17px 45px -4px black;
+    }
+    nav img {
+        width: 150px;
+        cursor: pointer;
+    }  
+    .resume img {
+        border: 2px solid #C71585;
+        width: 70vw;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="portfolio.html"><img src="logo.png" alt="logo"></a> 
+        <li><a href="portfolio.html">Home</a></li>
+        <li><a href="aboutMe.html">About me</a></li>
+        <li><a href="resume.html">My resume</a></li>
+        <li><a href="contact.html">Contact me</a></li>
+</nav>
+<div class="resume">
+    <img src="resume1.jpeg" alt="">
+    <img src="resume2.jpeg" alt="">
+</div>
+</body>
+</html>
