@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <title>About me</title>
+    <style>
+    * {
+        font-family: 'Playfair Display', serif;
+    }
+    body {
+        background-image: url('https://www.publicdomainpictures.net/pictures/120000/velka/pastel-tulips-background.jpg');
+        object-fit: cover;
+    }
+     nav {
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    nav li {
+        list-style-type: none;
+    }
+    nav li a {
+        border: 1px solid #C71585;
+        padding: 10px 20px;
+        text-decoration: none;
+        font-size: 23px;
+        font-weight: 600;
+        color: #C71585;
+        letter-spacing: 0.03em;
+        transition: 0.2s ease-in;
+    }
+    nav li a:hover {
+        background-color: #C71585;
+        opacity: 0.8;
+        color: black;
+        box-shadow: 10px 17px 45px -4px black;
+    }
+    nav img {
+        width: 150px;
+        cursor: pointer;
+    }   
+    .about {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 50px;
+    }
+    .about .text {
+        background-color: #ffdde2;
+        margin: 0px 10px;
+        padding: 30px;
+        border: 1px solid black;
+        text-align: center;
+        letter-spacing: 0.05em;
+        box-shadow: 10px 17px 45px -4px black;
+    }
+    .about img {
+        margin: 0px 20px;
+        width: 700px;
+        box-shadow: -10px 17px 45px -4px black;
+    }
+    </style>
+</head>
+<body>
+    <nav>
+            <a href="portfolio.html"><img src="logo.png" alt="logo"></a> 
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+            <li><a href="resume.html">My resume</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+    </nav>
+    <div class="about">
+        <div data-aos="fade-right">
+            <img src="me.jpg" alt="me">
+        </div>
+        <div data-aos="fade-left">
+        <div class="text">
+            <p>Hi there! It's a pleasure to know that you have taken an interest in me</p>
+            <p>I'm currently a student at Lahti University Of Applied Science(Finland) with a major in Business Information Technology and will either transfer to Edinburgh University(UK) for Business Information Technology Double Degree Program or study at Harvard Extension School(USA) for Bachelor of Liberal Arts in Computer Science with a minor in Finance</p>
+            <p>I specialize in Business and Technology, as coherent to the degree that I am pursuing</p>
+            <p>As for the business aspects, I have had experience in the industry since 16 years old and having led a team of people at a young age have given me a lot of insights on how the industry work</p>
+            <p>For the technology side, I am currently pursuing and building proficieny in computer science, HTML5, CSS3, Javascript, Jquery, Bootstrap, Java, Git, ReactJS(limited), NodeJS(limited)</p>
+            <p>I have had experience working with Microsoft Office 365, Adobe Photoshop, Adobe Illustrator, Adobe After Effects</p>
+            <p>I love learning and can adapt very quickly to different environments, so at whatever jobs I'm assigned to, I will always deliver</p>
+        </div>
+        </div>
+    </div>
+</body>
+<script>
+    AOS.init();
+  </script>
+</html>

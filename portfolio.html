@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+    <style>
+        html, 
+        body {
+            min-height: 100%;
+            height:101%; 
+            padding:0; 
+            margin:0;
+            }
+
+        * {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            margin-top: -5px;
+        }
+        nav {
+            margin-right: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        nav li {
+            list-style-type: none;
+        }
+        nav li a {
+            border: 1px solid #C71585;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-size: 23px;
+            font-weight: 600;
+            color: #C71585;
+            letter-spacing: 0.03em;
+            transition: 0.2s ease-in;
+        }
+        nav li a:hover {
+            background-color:  #C71585;
+            opacity: 0.8;
+            color: white;
+            box-shadow: 10px 17px 45px -4px black;
+        }
+        nav img {
+            width: 150px;
+            cursor: pointer;
+        }
+        video { 
+            width: 100%;
+            position: absolute;
+            object-fit: cover;
+            background-size: cover;
+            top: 0px;
+            left: 0px;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1;
+            box-sizing: content-box;
+        }
+        .video-container {
+            position: relative;
+            height: 100%;
+            border: 1px solid yellow;
+        }
+        .content {
+            position: absolute;
+            left: 50px;
+            top: 200px;
+            margin: 10px;
+            padding: 5px 20px;
+            font-size: 20px;
+            overflow: none;
+        }
+        .content h1 {
+            font-size: 65px;
+            color:  #C71585;
+        }
+        #myBtn {
+            cursor: pointer;
+            margin-left: 20px;
+            margin-top: 60px;
+            border: 1px solid #C71585;
+            font-size: 26px;
+            font-weight: 800;
+            color: #e827a0;
+            padding: 15px 60px;
+            background-color: transparent;
+            transition: 0.2s ease-in;
+        }
+        #myBtn:hover {
+            color: white;
+            box-shadow: 10px 17px 45px -4px black;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="video-container"> 
+            <video autoplay muted loop id="video">
+                    <source src="video.mp4" type="video/mp4">
+            </video>
+        <nav>
+            <a href="portfolio.html"><img src="logo.png" alt="logo"></a> 
+            <li><a href="portfolio.html">Home</a></li>
+            <li><a href="aboutMe.html">About me</a></li>
+            <li><a href="resume.html">My resume</a></li>
+            <li><a href="contact.html">Contact me</a></li>
+        </nav>
+        
+        <div class="content">
+            <h1>Want to know more about me?</h1>
+            <br>
+            <h1>You've come to the right place</h1>
+            <button id="myBtn"><a style="text-decoration: none; color:#C71585;" id="button" href="aboutMe.html">Who am I</a></button>
+        </div>
+    </div>
+
+</body>
+</html>
